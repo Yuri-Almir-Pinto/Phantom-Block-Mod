@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "modtutorialmaneiro",
+	"version": "${version}",
+	"name": "Mod de Tutorial",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/modtutorialmaneiro/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.yipeekiyaay.modtutorialmaneiro.ModTutorialManeiro"
+		],
+		"client": [
+			"net.yipeekiyaay.modtutorialmaneiro.ModTutorialManeiroClient"
+		],
+		"fabric-datagen": [
+			"net.yipeekiyaay.modtutorialmaneiro.ModTutorialManeiroDataGenerator"
+		]
+	},
+	"mixins": [
+		"modtutorialmaneiro.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
